@@ -84,6 +84,21 @@ h1 span:nth-child(1) {
 /* quick links section*/
 .info {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  border: 1px solid red;
+}
+
+.info h2 {
+  width: 18.75rem;
+  text-align: left;
+  /* align-self: flex-start; */
 }
 
 .info-card,
