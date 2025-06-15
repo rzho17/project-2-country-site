@@ -81,7 +81,80 @@ h1 span:nth-child(1) {
   margin-bottom: -0.5rem;
 }
 
-/* info */
+/* quick links section*/
 .info {
   min-height: 100vh;
+}
+
+.info-card,
+.info-card img,
+.blur {
+  border-radius: 20px;
+}
+.info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* align-items: center; */
+
+  position: relative;
+  height: 25rem;
+  width: 18.75rem;
+
+  border: 1px solid;
+
+  color: var(--whiteColor);
+}
+
+.info-text {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.info-card h3 {
+  font-weight: 200;
+  font-size: 2.5rem;
+}
+
+.info-card p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.info-card a {
+  display: block;
+
+  border-radius: 15px;
+  text-align: center;
+  color: var(--darkColor);
+  width: 100%;
+  background-color: var(--whiteColor);
+}
+
+.info-card img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100%;
+
+  object-fit: cover;
+  z-index: -2;
+}
+
+.blur {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  rotate: 180deg;
+  /* gradient blur referenced from 
+  https://codepen.io/QuiteQuinn/pen/jOBxGjr
+   */
+  mask: linear-gradient(black, black, transparent);
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 70%;
+  width: 100%;
+  z-index: -1;
 }
