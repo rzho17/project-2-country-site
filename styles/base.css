@@ -8,6 +8,8 @@
 
 body {
   font-family: "Taviraj", sans-serif;
+  /* prevents nav from covering items on bottom of page */
+  padding-bottom: 5rem;
 }
 
 h1 {
