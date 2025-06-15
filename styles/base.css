@@ -2,6 +2,7 @@
   --primaryColor: red;
   --secondaryColor: red;
   --highlightColor: red;
+  --whiteColor: #ffffff;
 }
 
 body {
@@ -30,4 +31,33 @@ a:active {
 
 a:focus {
   outline: 1px dotted;
+}
+
+/* header and nav */
+
+header {
+  position: absolute;
+  z-index: 9999;
+}
+
+nav {
+  position: fixed;
+
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  width: 300px;
+
+  color: var(--whiteColor);
+  border: 1px solid var(--whiteColor);
+  padding: 1rem;
+  border-radius: 50px;
+
+  backdrop-filter: blur(10px);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
