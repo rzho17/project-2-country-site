@@ -1,15 +1,18 @@
 :root {
   --primaryColor: red;
   --secondaryColor: red;
-  --highlightColor: red;
+  --highlightColor: #c8102e;
   --whiteColor: #ffffff;
   --darkColor: #252525;
+  --boxShadow: #0000003d 0px 3px 8px;
 }
+
+/* global styles */
 
 body {
   font-family: "Taviraj", sans-serif;
   /* prevents nav from covering items on bottom of page */
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
 }
 
 h1 {
@@ -67,6 +70,7 @@ nav {
   border-radius: 50px;
 
   backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 ul {
@@ -74,4 +78,18 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* footer */
+
+footer {
+  color: var(--whiteColor);
+  background-color: var(--darkColor);
+  height: 8rem;
+}
+
+footer a {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
 }

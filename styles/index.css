@@ -91,8 +91,6 @@ h1 span:nth-child(1) {
   gap: 1rem;
 
   padding: 1rem;
-
-  border: 1px solid red;
 }
 
 .info h2 {
@@ -106,6 +104,12 @@ h1 span:nth-child(1) {
 .blur {
   border-radius: 20px;
 }
+
+.info-card,
+.contact-form {
+  box-shadow: var(--boxShadow);
+}
+
 .info-card {
   display: flex;
   flex-direction: column;
@@ -115,8 +119,6 @@ h1 span:nth-child(1) {
   position: relative;
   height: 25rem;
   width: 18.75rem;
-
-  border: 1px solid;
 
   color: var(--whiteColor);
 }
@@ -183,11 +185,13 @@ h1 span:nth-child(1) {
   min-height: 100vh;
   padding: 1rem;
   gap: 1rem;
+
+  margin-bottom: 3rem;
 }
 
 .contact-form {
   border-radius: 10px;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .contact-form img {
@@ -203,7 +207,8 @@ h1 span:nth-child(1) {
   gap: 0.5rem;
 }
 
-.contact-form input {
+.contact-form input,
+.contact textarea {
   border: none;
   background-color: #ededed;
   border-radius: 10px;
@@ -212,5 +217,5 @@ h1 span:nth-child(1) {
 
 .contact input[type="submit"] {
   color: var(--whiteColor);
-  background-color: #80fa86;
+  background-color: var(--highlightColor);
 }
