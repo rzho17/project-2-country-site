@@ -81,15 +81,26 @@
   padding: 1rem;
 }
 
+.recommended h2 {
+  margin-bottom: 2rem;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
+}
+
+.one,
+.four {
+  grid-column: span 2;
 }
 
 .placeholder {
   height: 150px;
   width: 100%;
-  border: 1px solid var(--darkColor);
+
+  box-shadow: var(--boxShadow);
   border-radius: 10px;
 }
