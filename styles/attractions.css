@@ -26,3 +26,22 @@
 .attraction-main p {
   line-height: 1.3;
 }
+
+/* recommended section */
+
+.recommended {
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.placeholder {
+  height: 150px;
+  width: 100%;
+  border: 1px solid var(--darkColor);
+  border-radius: 10px;
+}
