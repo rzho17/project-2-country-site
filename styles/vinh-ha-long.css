@@ -1,0 +1,9 @@
+.attractions-nav li:nth-of-type(2) {
+  color: var(--highlightColor);
+}
+
+.attractions-nav li:nth-of-type(2)::after {
+  background-color: var(--highlightColor);
+  rotate: 45deg;
+  border-radius: 10%;
+}

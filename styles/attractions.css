@@ -32,10 +32,6 @@
   background-color: var(--darkColor);
 }
 
-/* .attractions-nav li:nth-of-type(2)::after {
-  border-radius: 10%;
-} */
-
 .attractions-nav li {
   position: relative;
   display: flex;
