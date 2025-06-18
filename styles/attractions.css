@@ -79,6 +79,7 @@ blockquote p {
   padding: 1rem;
   color: var(--whiteColor);
   background-color: var(--highlightColor);
+  box-shadow: var(--boxShadow);
 }
 .attraction-main h1 {
   font-family: "Taviraj", serif;
@@ -124,6 +125,41 @@ blockquote p {
 
   box-shadow: var(--boxShadow);
   border-radius: 10px;
+}
+
+figure {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  rotate: 180deg;
+  /* gradient blur referenced from 
+  https://codepen.io/QuiteQuinn/pen/jOBxGjr
+   */
+  mask: linear-gradient(black, black, transparent);
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 30%;
+  width: 100%;
+  border-radius: 10px;
+  /* z-index: -1; */
+}
+figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+figcaption {
+  position: absolute;
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: var(--whiteColor);
+  left: 1rem;
+  bottom: 0;
 }
 
 /* media query */
