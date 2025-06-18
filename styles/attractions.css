@@ -141,11 +141,10 @@ figure {
    */
   mask: linear-gradient(black, black, transparent);
   backdrop-filter: blur(1px);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 30%;
   width: 100%;
   border-radius: 10px;
-  /* z-index: -1; */
 }
 figure img {
   width: 100%;
