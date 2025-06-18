@@ -2,6 +2,7 @@
 
 .attractions-nav {
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .attractions-nav ul {
@@ -58,13 +59,37 @@
   padding: 1rem;
 }
 
-.attraction-main h2 {
-  font-weight: 200;
-  font-size: clamp(2rem, 1vw, 4rem);
+.info-text-wrapper {
+  padding: 0 1rem;
 }
 
-.attraction-main p:nth-of-type(1) {
+blockquote {
   margin-bottom: 1rem;
+  max-width: 18.75rem;
+}
+
+blockquote p {
+  text-align: right;
+}
+
+.info-text-wrapper a {
+  display: inline-block;
+  border-radius: 10px;
+  margin: 1rem 0;
+  padding: 1rem;
+  color: var(--whiteColor);
+  background-color: var(--highlightColor);
+}
+.attraction-main h1 {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: clamp(2.5rem, 1vw, 4rem);
+}
+
+.attraction-main h2 {
+  font-weight: 200;
+  font-size: 1.5rem;
 }
 
 .attraction-main p {
@@ -99,4 +124,21 @@
 
   box-shadow: var(--boxShadow);
   border-radius: 10px;
+}
+
+/* media query */
+@media (min-width: 48em) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(6, 200px); */
+  }
+
+  .placeholder {
+    height: 100%;
+  }
+
+  .four {
+    grid-column: 4 / span 3;
+    grid-row: 1 / 6;
+  }
 }
