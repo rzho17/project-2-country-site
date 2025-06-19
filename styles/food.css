@@ -17,6 +17,8 @@ h1 {
 .food-sections {
   color: var(--highlightColor);
   padding: 1rem;
+
+  margin-bottom: 2rem;
 }
 
 .food-sections figure {
