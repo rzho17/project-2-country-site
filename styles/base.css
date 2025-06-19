@@ -5,12 +5,15 @@
   --whiteColor: #ffffff;
   --darkColor: #252525;
   --boxShadow: #0000003d 0px 3px 8px;
+  --backgroundColor: #ebf6f7;
 }
 
 /* global styles */
 
 body {
   font-family: "Taviraj", sans-serif;
+  background-color: var(--backgroundColor);
+
   /* prevents nav from covering items on bottom of page */
   /* padding-bottom: 5rem; */
 }

@@ -162,6 +162,12 @@ figcaption {
   bottom: 0;
 }
 
+/* colors */
+.attraction-main,
+.recommended {
+  color: var(--highlightColor);
+}
+
 /* media query */
 @media (min-width: 48em) {
   .grid-container {
