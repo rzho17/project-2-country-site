@@ -24,6 +24,14 @@ h1 {
   font-style: normal;
 }
 
+h2 {
+  font-weight: 200;
+  font-size: clamp(2.5rem, 1vw, 4rem);
+}
+p {
+  line-height: 1.5;
+}
+
 /* links */
 
 a {
