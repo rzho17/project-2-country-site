@@ -28,6 +28,7 @@ h1 {
 .food-sections h3 {
   font-weight: 200;
   font-size: 1rem;
+  font-style: italic;
 }
 
 .food-sections p {
@@ -36,4 +37,11 @@ h1 {
 
 .food-sections img {
   width: 100%;
+}
+
+figcaption a {
+  display: inline-block;
+  border-radius: 10px;
+  color: var(--whiteColor) !important;
+  background-color: var(--highlightColor);
 }
