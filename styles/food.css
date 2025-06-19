@@ -14,24 +14,24 @@ h1 {
   padding-top: 7rem;
   padding-bottom: 2rem;
 }
-.food-articles {
+.food-sections {
   color: var(--highlightColor);
   padding: 1rem;
 }
 
-.food-articles figure {
+.food-sections figure {
   margin-bottom: 2rem;
 }
 
-.food-articles h3 {
+.food-sections h3 {
   font-weight: 200;
   font-size: 1rem;
 }
 
-.food-articles p {
+.food-sections p {
   padding-top: 1rem;
 }
 
-.food-articles img {
+.food-sections img {
   width: 100%;
 }
