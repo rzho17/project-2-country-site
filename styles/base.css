@@ -50,10 +50,18 @@ header {
   z-index: 9999;
 }
 
-header h2 {
+.logo {
+  display: block;
+}
+
+.logo img {
+  width: clamp(3.125rem, 4vw, 5rem);
+}
+
+header .logo {
   position: absolute;
-  top: 2rem;
-  left: 2rem;
+  top: 1rem;
+  left: 1rem;
 }
 
 .global-nav {
