@@ -72,9 +72,9 @@ h1 span:nth-child(1) {
 }
 
 .title {
-  font-size: 5.5rem;
   /* used min-max calculator to help me find ideal size i wanted with clamp */
-  font-size: clamp(5rem, 4.6rem + 2vw, 7rem);
+  /* font-size: clamp(5rem, 4.6rem + 2vw, 7rem); */
+  font-size: clamp(5rem, 4.6rem + 5vw, 12rem);
 }
 
 .title:nth-of-type(2) {
@@ -217,4 +217,18 @@ h1 span:nth-child(1) {
 .contact input[type="submit"] {
   color: var(--whiteColor);
   background-color: var(--highlightColor);
+}
+
+@media (min-width: 48em) {
+  h1 {
+    width: 100%;
+    top: 37.5%;
+  }
+  .title {
+    display: inline-block;
+  }
+
+  .title {
+    margin-left: 5rem;
+  }
 }
