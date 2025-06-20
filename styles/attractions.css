@@ -167,11 +167,48 @@ figcaption {
 
 /* media query */
 @media (min-width: 48em) {
+  /* attraction main */
+  .attraction-main video {
+    position: relative;
+    height: 100vh;
+  }
+
+  .info-wrapper,
+  .info-text-wrapper {
+    color: var(--whiteColor);
+    position: absolute;
+  }
+
+  .info-wrapper {
+    left: 1rem;
+    bottom: 4rem;
+  }
+  .info-wrapper h1 {
+    font-weight: 400;
+    font-size: clamp(2.5rem, 10vw, 15rem);
+    margin-bottom: -1.25rem;
+  }
+
+  .info-wrapper p {
+    font-size: clamp(2rem, 1vw, 3rem);
+  }
+
+  .info-text-wrapper {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 300px;
+    text-align: right;
+    top: 2rem;
+    right: 1rem;
+  }
+
+  /* recommended section */
   .grid-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(3, 250px);
-    /* grid-template-rows: repeat(6, 200px); */
+    grid-template-rows: repeat(3, 15.625rem);
   }
 
   .placeholder {
