@@ -93,7 +93,16 @@ h1 span:nth-child(1) {
   padding: 1rem;
 }
 
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 1rem;
+}
+
 .info h2 {
+  margin: 2rem 0;
   width: 18.75rem;
   text-align: left;
   /* align-self: flex-start; */
@@ -152,7 +161,8 @@ h1 span:nth-child(1) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
+  width: 100%;
+  /* width: 300px; */
   height: 100%;
 
   object-fit: cover;
@@ -220,6 +230,7 @@ h1 span:nth-child(1) {
 }
 
 @media (min-width: 48em) {
+  /* landing section */
   h1 {
     width: 100%;
     top: 37.5%;
@@ -230,5 +241,56 @@ h1 span:nth-child(1) {
 
   .title {
     margin-left: 5rem;
+  }
+
+  /* info section */
+
+  .info {
+    justify-content: center;
+    align-items: center;
+  }
+  .info-wrapper {
+    flex-direction: row;
+  }
+
+  .info h2 {
+    text-align: center;
+  }
+  .info-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* contact section */
+
+  .contact-form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 68.75rem;
+    align-items: center;
+  }
+
+  .contact-form figure {
+    min-width: 350px;
+    width: 100%;
+    max-width: 600px;
+    align-self: stretch;
+  }
+
+  .contact-form img {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .contact-form form {
+    gap: 1rem;
+    padding: 3rem;
+    min-width: 350px;
+    width: 100%;
+    max-width: 500px;
+    /* flex-grow: 1; */
   }
 }
