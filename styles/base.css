@@ -104,11 +104,20 @@ header .logo {
 footer {
   color: var(--whiteColor);
   background-color: var(--darkColor);
-  height: 8rem;
+  height: 12rem;
 }
 
 footer a {
   display: block;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1rem;
+  width: max-content;
+  margin: 0 auto;
+}
+
+footer p {
+  font-size: 1rem;
   width: max-content;
   margin: 0 auto;
 }
