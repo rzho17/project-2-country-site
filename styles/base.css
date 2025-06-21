@@ -10,6 +10,9 @@
 
 /* global styles */
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Taviraj", sans-serif;
   background-color: var(--backgroundColor);
@@ -117,4 +120,10 @@ footer p {
   font-size: 1rem;
   width: max-content;
   margin: 0 auto;
+}
+
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: auto;
+  }
 }

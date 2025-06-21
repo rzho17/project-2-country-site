@@ -220,6 +220,7 @@ h1 span:nth-child(1) {
 }
 
 .contact input[type="submit"] {
+  cursor: pointer;
   color: var(--whiteColor);
   background-color: var(--highlightColor);
 }

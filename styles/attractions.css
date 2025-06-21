@@ -240,4 +240,11 @@ figcaption {
   .recommended {
     margin: 5rem 0;
   }
+
+  /* hover effect */
+
+  .placeholder:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+  }
 }
