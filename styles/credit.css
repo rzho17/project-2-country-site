@@ -94,3 +94,17 @@ td a {
 .must-know {
   margin-bottom: 3rem;
 }
+
+@media (min-width: 48em) {
+  .table-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    margin-bottom: 3rem;
+  }
+
+  .must-know {
+    grid-column: 3/4;
+  }
+}
