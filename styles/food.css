@@ -63,7 +63,7 @@ figcaption a {
     max-width: 46.875rem;
   }
 
-  .food-sections figcaption {
+  .food-sections .food-info {
     max-width: 31.25rem;
   }
 
