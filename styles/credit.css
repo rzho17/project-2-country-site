@@ -10,7 +10,6 @@
 }
 
 body {
-  /* color: #262262; */
   color: var(--highlightColor);
 }
 
@@ -19,12 +18,9 @@ h1 {
   font-size: clamp(2.5rem, 5vw, 5rem);
   text-align: center;
 
-  /* color: var(--whiteColor); */
-  color: var(--highlightColor);
   font-weight: 800;
   padding-top: 7rem;
   padding-bottom: 2rem;
-  /* background-image: url("../assets/attractions/images/saigon-r1.jpg"); */
 
   width: 100%;
 
@@ -45,7 +41,7 @@ th,
 td,
 caption {
   border: 1px solid var(--whiteColor);
-  /* border-collapse: collapse; */
+
   border-spacing: 0.5rem 1rem;
   border-radius: 25px;
   padding: 0.5rem;
@@ -93,6 +89,7 @@ td a {
 
 .must-know {
   margin-bottom: 3rem;
+  background-color: #262262;
 }
 
 @media (min-width: 48em) {
