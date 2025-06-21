@@ -14,7 +14,8 @@
 .main-landing {
   position: relative;
 
-  background-image: url("/assets/index/landing-back.jpg");
+  /* background-image: url("/assets/index/landing-back.jpg"); */
+  background-image: url("/project-2/assets/index/landing-back.jpg");
 
   background-position: center;
   background-size: cover;
